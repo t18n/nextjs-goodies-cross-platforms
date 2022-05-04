@@ -1,0 +1,1 @@
+export const fakeToken = 'this_is_a_fake_token';

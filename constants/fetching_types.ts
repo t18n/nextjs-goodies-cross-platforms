@@ -1,0 +1,1 @@
+export const nextFetchingTypes = ['csr', 'ssg', 'ssr', 'isr', 'on-demand-isr'];

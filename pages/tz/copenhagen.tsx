@@ -7,7 +7,7 @@ const TimezoneCph = () => {
   const { weather } = router.query;
 
   return (
-    <PageLayout title="Dynamic page">
+    <PageLayout title="Nested page">
       <div>Cool, you are in Copenhagen!</div>
       <div>
         Btw, how is the weather today? Try{" "}

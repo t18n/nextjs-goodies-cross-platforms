@@ -6,7 +6,7 @@ const Timezone = () => {
   const { tz } = router.query;
 
   return (
-    <PageLayout title="Dynamic page">
+    <PageLayout title="Catch all page">
       <div>
         Found <b>{Array.isArray(tz) && tz.join(", ")}</b>, I am confulsed 🤔
       </div>

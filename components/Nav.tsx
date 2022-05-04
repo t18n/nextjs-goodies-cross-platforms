@@ -34,7 +34,7 @@ export const NavBar = ({ withLogin }: { withLogin: boolean }) => {
       {nextFetchingTypes.map((type) => (
         <li className={navItemClassnames(`/time/${type}`)} key={type}>
           <Link href={`/time/${type}`}>
-            <a>{type.toUpperCase().replaceAll(/-/g, " ")}</a>
+            <a>{type.toUpperCase().replace(/-/g, " ")}</a>
           </Link>
         </li>
       ))}

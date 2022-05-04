@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<any>) {
   const { slug } = JSON.parse(req.body);
-  console.log(`Revalidating ${slug}...`);
+  console.log(`Revalidating "${slug}"`);
 
   try {
     await res.unstable_revalidate(slug);

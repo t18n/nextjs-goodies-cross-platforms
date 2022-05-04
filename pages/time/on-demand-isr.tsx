@@ -25,6 +25,10 @@ export default function ISRPage({ datetimeString }: ISRPageProps) {
       </div>
 
       <button onClick={revalidate}>Revalidate</button>
+
+      <hr />
+
+      <div>TODO: Handle slug with locale</div>
     </PageLayout>
   );
 }

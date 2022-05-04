@@ -4,17 +4,27 @@ import { nextFetchingTypes } from "../constants/fetching_types";
 import styles from "./Nav.module.css";
 import classnames from "classnames";
 import { useRouter } from "next/router";
+import Cookies from "js-cookie";
 
 export const NavBar = ({ withLogin }: { withLogin: boolean }) => {
   const router = useRouter();
+
+  const isLoggedin = !!Cookies.get("token");
 
   const navItemClassnames = (path: string) =>
     classnames(styles["nav-item"], {
       [styles["active"]]: router.pathname === path,
     });
 
+  const navItemLoginClassnames = (path: string) =>
+    classnames(styles["nav-item"], {
+      [styles["active"]]: router.pathname === path,
+      [styles["nav-item-login"]]: router.pathname === "/login",
+    });
+
   return (
     <ul className={styles.nav}>
+      <h4 className={styles["nav-item-header"]}>Time - Render</h4>
       {nextFetchingTypes.map((type) => (
         <li className={navItemClassnames(`/time/${type}`)} key={type}>
           <Link href={`/time/${type}`}>
@@ -22,8 +32,9 @@ export const NavBar = ({ withLogin }: { withLogin: boolean }) => {
           </Link>
         </li>
       ))}
-      {withLogin && (
-        <li className={navItemClassnames(`/login`)}>
+
+      {withLogin && !isLoggedin && (
+        <li className={navItemLoginClassnames(`/login`)}>
           <Link href="/login">
             <a className="login-button">Login</a>
           </Link>

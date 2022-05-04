@@ -26,9 +26,11 @@ export const PageLayout = ({ children, title }: PageLayoutProps) => {
 
       <NavBar withLogin={router.route !== "/dashboard"} />
 
-      <h1>{title}</h1>
+      <div className={styles.content}>
+        <h1>{title}</h1>
 
-      {children}
+        {children}
+      </div>
     </div>
   );
 };

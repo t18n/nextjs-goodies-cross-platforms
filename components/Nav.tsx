@@ -33,10 +33,15 @@ export const NavBar = ({ withLogin }: { withLogin: boolean }) => {
         </li>
       ))}
 
-      <h4 className={styles["nav-item-header"]}>Timezone - Route Params</h4>
+      <h4 className={styles["nav-item-header"]}>Timezone - Pages</h4>
       <li className={navItemClassnames("/tz/just_a_random_timezone")}>
         <Link href="/tz/just_a_random_timezone">
           <a>Dynamic page</a>
+        </Link>
+      </li>
+      <li className={navItemClassnames("/tz/just_a_random_timezone/welcome")}>
+        <Link href="/tz/just_a_random_timezone/welcome">
+          <a>Dynamic nested page</a>
         </Link>
       </li>
       <li

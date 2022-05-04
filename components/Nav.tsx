@@ -24,6 +24,12 @@ export const NavBar = ({ withLogin }: { withLogin: boolean }) => {
 
   return (
     <ul className={styles.nav}>
+      <li className={navItemClassnames(`/`)}>
+        <Link href={`/`}>
+          <a>Home</a>
+        </Link>
+      </li>
+
       <h4 className={styles["nav-item-header"]}>Time - Render</h4>
       {nextFetchingTypes.map((type) => (
         <li className={navItemClassnames(`/time/${type}`)} key={type}>
@@ -56,6 +62,13 @@ export const NavBar = ({ withLogin }: { withLogin: boolean }) => {
       <li className={navItemClassnames(`/tz/copenhagen`)}>
         <Link href={`/tz/copenhagen`}>
           <a>Copenhagen</a>
+        </Link>
+      </li>
+
+      <h4 className={styles["nav-item-header"]}>i18n</h4>
+      <li className={navItemClassnames("/i18n")}>
+        <Link href="/i18n">
+          <a>i18n</a>
         </Link>
       </li>
 

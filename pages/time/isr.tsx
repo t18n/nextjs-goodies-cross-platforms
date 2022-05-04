@@ -1,5 +1,4 @@
 import { GetStaticProps } from "next";
-import { useEffect, useState } from "react";
 import { PageLayout } from "../../components/PageLayout";
 import { timeApiURL } from "../../constants/urls";
 
@@ -7,7 +6,7 @@ type ISRPageProps = {
   datetimeString: string;
 };
 
-const revalidateTime = 10;
+const revalidateTime = 5;
 
 export default function ISRPage({ datetimeString }: ISRPageProps) {
   return (

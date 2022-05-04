@@ -7,7 +7,13 @@ type ISRPageProps = {
 };
 
 export default function ISRPage({ datetimeString }: ISRPageProps) {
-  const revalidate = () => fetch("/api/revalidate");
+  const revalidate = () =>
+    fetch("/api/revalidate", {
+      method: "POST",
+      body: JSON.stringify({
+        slug: "/time/on-demand-isr",
+      }),
+    });
 
   return (
     <PageLayout

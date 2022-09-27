@@ -4,7 +4,7 @@
     "beforeBuildCommand": "yarn build",
     "beforeDevCommand": "yarn dev",
     "devPath": "http://localhost:3000",
-    "distDir": "../out"
+    "distDir": "../dist"
   },
   "package": {
     "productName": "nextjs-features",
@@ -29,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.next-awesome-cross-platforms.dev",
       "longDescription": "",
       "macOS": {
         "entitlements": null,

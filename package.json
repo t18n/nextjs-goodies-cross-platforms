@@ -1,15 +1,16 @@
 {
-  "name": "nextjs-features",
+  "name": "nextjs-goodies-cross-platforms",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "dev:desktop": "tauri dev",
+    "dev:web": "next dev",
+    "dev": "tauri dev",
     "build": "next build",
     "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@capacitor/core": "^4.3.0",
     "@tauri-apps/api": "^1.1.0",
     "classnames": "^2.3.1",
     "i18next": "^21.6.16",

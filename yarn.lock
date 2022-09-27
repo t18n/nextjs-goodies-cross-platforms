@@ -24,6 +24,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@capacitor/core@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "@capacitor/core@npm:4.3.0"
+  dependencies:
+    tslib: ^2.1.0
+  checksum: 63977a7ec172e98e6acb8ba6b239b70d565e08e3d72e2ed6e08df95a006142f2da002cd937ee0d40de20c39773958b13f4296492a197b9df9a5e3f28b94ca6a6
+  languageName: node
+  linkType: hard
+
 "@eslint/eslintrc@npm:^1.2.2":
   version: 1.2.2
   resolution: "@eslint/eslintrc@npm:1.2.2"
@@ -1779,10 +1788,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nextjs-features@workspace:.":
+"nextjs-goodies-cross-platforms@workspace:.":
   version: 0.0.0-use.local
-  resolution: "nextjs-features@workspace:."
+  resolution: "nextjs-goodies-cross-platforms@workspace:."
   dependencies:
+    "@capacitor/core": ^4.3.0
     "@tauri-apps/api": ^1.1.0
     "@tauri-apps/cli": ^1.1.1
     "@types/js-cookie": ^3.0.2
@@ -2371,6 +2381,13 @@ __metadata:
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.1.0":
+  version: 2.4.0
+  resolution: "tslib@npm:2.4.0"
+  checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
   languageName: node
   linkType: hard
 

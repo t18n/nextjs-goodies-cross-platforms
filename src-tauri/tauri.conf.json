@@ -29,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.next-awesome-cross-platforms.dev",
+      "identifier": "com.nextjs-goodies.dev",
       "longDescription": "",
       "macOS": {
         "entitlements": null,

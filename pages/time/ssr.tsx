@@ -18,6 +18,10 @@ export default function SSRPage({ datetimeString }: ISRPageProps) {
   );
 }
 
+/**
+ * Note:There may be some gliches between SSG and Tauri
+ * https://tauri.app/v1/guides/getting-started/setup/next-js#nextjs-in-ssg-mode
+ */
 export const getServerSideProps: GetServerSideProps = async () => {
   const response = await fetch(timeApiURL);
   const data = await response.json();
